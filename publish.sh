@@ -8,18 +8,17 @@ echo Publishing $VERSION
 
 git add .
 git commit -m "Publishing $VERSION"
-git tag $VERSION
 
-helm publish .
-exit
-git add *.tgz
+helm package .
+
 git stash
 git checkout gh-pages
 git stash pop
 
 helm repo index .
-exit
-git add .
+
+git add *.tgz
+git add index.yaml
 git commit -m "Publishing $VERSION"
 git push
 git checkout main
