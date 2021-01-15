@@ -11,7 +11,7 @@ git commit -m "Publishing $VERSION"
 git tag $VERSION
 
 helm publish .
-
+exit
 git add *.tgz
 git stash
 git checkout gh-pages
