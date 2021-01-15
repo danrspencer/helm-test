@@ -11,11 +11,14 @@ git commit -m "Publishing $VERSION"
 git tag $VERSION
 
 helm publish .
+
 git add *.tgz
 git stash
 git checkout gh-pages
 git stash pop
+
 helm repo index .
+exit
 git add .
 git commit -m "Publishing $VERSION"
 git push
