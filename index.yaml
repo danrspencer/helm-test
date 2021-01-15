@@ -2,7 +2,16 @@ apiVersion: v1
 entries:
   Helm-Test:
   - apiVersion: v2
-    created: "2021-01-15T15:42:06.211556Z"
+    created: "2021-01-15T15:46:36.43613Z"
+    description: A Helm chart for Kubernetes
+    digest: 8d5d81e3af7871f15797453d87c5f4877fc52a70d18e24cb29ce0fbb69a94651
+    name: Helm-Test
+    type: application
+    urls:
+    - Helm-Test-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    created: "2021-01-15T15:46:36.43566Z"
     description: A Helm chart for Kubernetes
     digest: 8975e6a62bcf84d3d6a6460ac7f96d462cbea1fc0a16f3ba049a601fde77c847
     name: Helm-Test
@@ -10,4 +19,4 @@ entries:
     urls:
     - Helm-Test-0.1.0.tgz
     version: 0.1.0
-generated: "2021-01-15T15:42:06.210926Z"
+generated: "2021-01-15T15:46:36.435104Z"
